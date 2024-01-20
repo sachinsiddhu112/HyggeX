@@ -1,0 +1,44 @@
+
+/* background1 and background2 are two backgrounds used in screen */
+
+.background1 {
+  background: linear-gradient(222.94deg, #051A91 -4.31%, #061C93 14.41%, #2284F1 81.88%, #1F80EB 103.81%);
+    
+}
+
+.background2 {
+    background: linear-gradient(222.94deg, #071844 -4.31%, #071844 -0.03%, #2D87B6 84.9%, #2D87B6 103.81%);
+
+}
+
+/* motion css class is used to make animation for screen which will execute on clicking on it. */
+.motion {
+    animation: pulse ease-out .35s;
+    position: relative;
+}
+.visible{
+    visibility: hidden;
+}
+
+@keyframes pulse {
+    0% {
+        left:0vw;
+        right: 0vw;
+    }
+
+    
+
+    50% {left: 30vw;
+        right: 30vw;
+        width: 0vw;
+    }
+
+    
+
+    100% {
+        left: 0vw;
+        right: 0vw;
+        width: 55vw;
+        
+    }
+}

@@ -1,0 +1,29 @@
+<div>
+                <Accordion
+                    className=''
+                    allowMultipleExpanded={true}
+                    preExpanded={[0]}>
+                    {data.map((item, i) => {
+
+                        return (
+                            <AccordionItem className='' key={i} uuid={i}>
+                                <AccordionItemHeading>
+                                    <AccordionItemButton className=''>
+                                        <AccordionItemState>
+
+                                        </AccordionItemState>
+
+                                        <span className=''>
+                                            {item.heading}
+                                        </span>
+
+                                    </AccordionItemButton>
+                                </AccordionItemHeading>
+                                <AccordionItemPanel>
+                                    <p className="">{item.detail}</p>
+                                </AccordionItemPanel>
+                            </AccordionItem>
+                        )
+                    })}
+                </Accordion>
+            </div>
